@@ -1,0 +1,35 @@
+//LIST USER
+GET http://127.0.0.1:8000/api/posts HTTP/1.1
+
+###
+
+//CREATE USER
+POST http://127.0.0.1:8000/api/posts HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Emily",
+    "age": 25
+}
+
+###
+
+//SHOW USER
+GET http://127.0.0.1:8000/api/posts/11
+
+
+###
+
+//UPDATE USER
+PUT http://127.0.0.1:8000/api/posts/11
+Content-Type: application/json
+
+{
+    "username": "Elizabeth",
+    "age": 26
+}
+
+###
+
+//DELETE USER
+DELETE http://127.0.0.1:8000/api/posts/11
